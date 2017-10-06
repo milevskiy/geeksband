@@ -18,10 +18,10 @@
 							</a>
 			<nav id="nav">
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#contacts">Contacts</a></li>
+					<li><a href="#header" class="btn-transition">Home</a></li>
+					<li><a href="#about" class="btn-transition">About</a></li>
+					<li><a href="#portfolio" class="btn-transition">Portfolio</a></li>
+					<li><a href="#contacts" class="btn-transition">Contacts</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -30,31 +30,108 @@
 				<h1>Geek's band,<br />
 				we love what we do.</h1>
 				<p>Web and apps.</p>
-				<a href="#portfolio" class="button special">Portfolio</a>
-				<a href="#about" class="button">Discover</a>
+				<a href="#portfolio" class="button special btn-transition">Portfolio</a>
+				<a href="#about" class="button btn-transition">Discover</a>
 			</div>
 		</section>
+		<section id="about">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6"></div>
-					<div class="col-md-6"></div>
-					<div class="col-md-6"></div>
+					<div class="col-md-12">
+						<h2 class="section__header">About</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<p>
+							We make web and mobile applications. Our applications are created with the help of good technologies.
+						</p>
+
+						<p>The following languages ​​are used in the work:</p>
+						<ul>
+							<li>PHP</li>
+							<li>JavaScript</li>
+							<li>C#</li>
+						</ul>
+					</div>
+					<div class="col-md-6"><img src="img/technologies.jpg" class="about__img" /></div>
 				</div>
 			</div>
 		</section>
-		<section id="contacts">
+		<section id="portfolio">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12"></div>
+					<div class="col-md-12">
+						<h2 class="section__header">Portfolio</h2>
+					</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="project enum-center">
+							<img src="img/projects/unexplained.png" alt="" class="project__img enum-center__img">
+							<h3 class="project__name">unexplained</h3>
+							<p class="project__description">The main character has the ability of telekinesis. Running from the zombie, he is at a dead end and he had no choice but to to survive.</p>
+							<a href="/">Read more</a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="project enum-center">
+							<img src="img/projects/clashofclouds.png" alt="" class="project__img enum-center__img">
+							<h3 class="project__name">Clash of Clouds</h3>
+							<p class="project__description">Welcome to the cloudy world! Amazing characters and enemies are waiting for you in Clash of Clouds, where each has its own features. Try to hold out as much as possible!</p>
+							<a href="/">Read more</a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="project enum-center">
+							<img src="img/projects/smarthome.png" alt="" class="project__img enum-center__img">
+							<h3 class="project__name">Smart home</h3>
+							<p class="project__description">Application for android. Graduation work of Alexandr Milevskiy</p>
+							<a href="/">Read more</a>
+						</div>
+					</div>
+				</div>
 				</div>
 			</div>
 		</section>
-		<footer id="footer">
+		<section id="team">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="section__header">Team</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="people enum-center">
+							<img src="img/team/alexandr.jpg" alt="" class="people__img enum-center__img">
+							<h3 class="people__name">Alexandr Milevskiy</h3>
+							<p class="people__description">PHP (Good), JavaScript (Bad), C# (Good+)</p>
+							<a href="/">Read more</a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="people enum-center">
+							<img src="img/team/regina.jpg" alt="" class="people__img enum-center__img">
+							<h3 class="people__name">Regina Gareeva</h3>
+							<p class="people__description">Artist, writer</p>
+							<a href="/">Read more</a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="people enum-center">
+							<img src="img/team/ksenia.jpg" alt="" class="people__img enum-center__img">
+							<h3 class="people__name">Ksenia Milevskaya</h3>
+							<p class="people__description">Designer</p>
+							<a href="/">Read more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer id="contacts" class="gray-bg">
 			<ul class="icons">
-				<li><a href="#" class="icon fa fa-vk"><span class="label">Vkontakte</span></a></li>
-				<li><a href="#" class="icon fa fa-instagram"><span class="label">Instagram</span></a></li>
-				<li><a href="#" class="icon fa fa-github"><span class="label">GitHub</span></a></li>
-				<li><a href="#" class="icon fa fa-envelope"><span class="label">Email</span></a></li>
+				<li><a href="https://github.com/milevskiy/" class="icon fa fa-github"><span class="label">GitHub</span></a></li>
+				<li><a href="mailto:skainetd@gmail.com" class="icon fa fa-envelope"><span class="label">Email</span></a></li>
 			</ul>
 			<p class="copyright">
 				:|
