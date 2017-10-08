@@ -9,4 +9,14 @@ $(document).ready(function(){
 		//анимируем переход на расстояние - top за 1500 мс
 		$('body,html').animate({scrollTop: top}, 1500);
 	});
+
+  $(".header__nav__button").on("click", function(event) {
+    event.preventDefault();
+    var navList = $("#nav ul");
+
+    if (navList.css("display") === "none")
+      navList.css("display", "block");
+    else
+      navList.css("display", "none");
+  });
 });

@@ -9,6 +9,11 @@ section {
 section#header {
   padding: 0; }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both; }
+
 .button {
   background-color: transparent;
   -webkit-border-radius: 4px;
@@ -46,6 +51,9 @@ section#header {
 .gray-bg {
   background-color: #f3f3f3; }
 
+.pattern-bg {
+  background-image: url(../img/pattern-bg.png); }
+
 /* navigation */
 #header__nav {
   color: #fff;
@@ -72,12 +80,35 @@ section#header {
       display: block;
       width: 155px;
       height: 52px; }
+  #header__nav .header__nav__button {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    display: none; }
+    @media (max-width: 960px) {
+      #header__nav .header__nav__button {
+        display: block;
+        padding-right: 0.5em;
+        font-size: 26px;
+        color: red; }
+        #header__nav .header__nav__button:hover {
+          color: #c31717;
+          text-decoration: none; } }
   #header__nav nav {
     position: absolute;
     right: 1em;
     top: 0; }
+    @media (max-width: 960px) {
+      #header__nav nav {
+        left: 0;
+        top: 3.5em;
+        width: 100%;
+        background-color: rgba(39, 40, 51, 0.965); } }
     #header__nav nav ul {
       margin: 0; }
+      @media (max-width: 960px) {
+        #header__nav nav ul {
+          display: none; } }
       #header__nav nav ul li {
         display: inline-block;
         margin-left: 1em; }
