@@ -166,6 +166,9 @@ section#header {
     vertical-align: middle;
     z-index: 1;
     color: #fff; }
+    @media (max-width: 960px) {
+      #header .content {
+        text-align: center; } }
 
 .enum-center {
   display: inline-block;
