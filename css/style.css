@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
+@import url("https://fonts.googleapis.com/css?family=Poiret+One");
+@import url("https://fonts.googleapis.com/css?family=Julius+Sans+One");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 .section__header {
   text-align: center;
   margin-bottom: 1.5em; }
@@ -8,6 +11,15 @@ section {
 
 section#header {
   padding: 0; }
+
+h1, h2 {
+  font-family: 'Julius Sans One', Arial, Helvetica, sans-serif; }
+
+h3 {
+  font-family: 'Poiret One', Arial, Helvetica, sans-serif; }
+
+p {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif; }
 
 .clearfix::after {
   content: "";
@@ -97,7 +109,8 @@ section#header {
   #header__nav nav {
     position: absolute;
     right: 1em;
-    top: 0; }
+    top: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif; }
     @media (max-width: 960px) {
       #header__nav nav {
         left: 0;
