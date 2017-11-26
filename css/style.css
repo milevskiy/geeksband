@@ -136,9 +136,9 @@ p {
         display: block;
         padding-right: 0.5em;
         font-size: 26px;
-        color: red; }
+        color: #fff; }
         #header__nav .header__nav__button:hover {
-          color: #c31717;
+          color: #e8e8e8;
           text-decoration: none; } }
   #header__nav.header-scrolled {
     -webkit-transition: all 0.5s ease;
