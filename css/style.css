@@ -80,11 +80,10 @@ p {
   background-image: url(../img/pattern-bg.png); }
 
 .main-bg {
+  background-image: url("../img/backgrounds/main.jpg");
   background-position: center center;
   -webkit-background-size: cover;
-          background-size: cover;
-  min-height: 400px;
-  background: transparent; }
+          background-size: cover; }
 
 .unexplained-bg {
   background-image: url("../img/backgrounds/unexplained.jpg");
