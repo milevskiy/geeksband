@@ -84,6 +84,9 @@ p {
   background-size: 100%;
   -webkit-background-size: cover;
   background-size: cover; }
+  @media (max-width: 960px) {
+    .main-bg {
+      background-position: center bottom; } }
 
 .unexplained-bg {
   background-attachment: fixed;
