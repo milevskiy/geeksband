@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css?family=Poiret+One");
 @import url("https://fonts.googleapis.com/css?family=Julius+Sans+One");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+.sticky {
+  position: fixed;
+  top: 0; }
+
 .section__header {
   text-align: center;
   margin-bottom: 1.5em; }
@@ -31,9 +35,9 @@ p {
   -webkit-border-radius: 4px;
           border-radius: 4px;
   border: 0;
-  -webkit-box-shadow: inset 0 0 0 1px rgba(144, 144, 144, 0.5);
-          box-shadow: inset 0 0 0 1px rgba(144, 144, 144, 0.5);
-  color: #555 !important;
+  -webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+          box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+  color: #fff !important;
   cursor: pointer;
   display: inline-block;
   font-size: 0.9em;
@@ -42,6 +46,7 @@ p {
   letter-spacing: 0.125em;
   line-height: 2.75em;
   padding: 0 2em;
+  margin: 0 0 0 1em;
   text-align: center;
   text-decoration: none;
   text-indent: 0.125em;
@@ -52,13 +57,18 @@ p {
   .button:active {
     background-color: rgba(144, 144, 144, 0.2); }
   .button.special {
-    background-color: #555;
+    background-color: #fff;
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
-    color: #fff !important; }
+    color: #000 !important; }
   .button.disabled, .button:disabled {
     cursor: default;
     opacity: 0.25; }
+
+.button-gamemarket {
+  margin: 0 0 0 15px; }
+  .button-gamemarket:hover {
+    opacity: 0.8; }
 
 .gray-bg {
   background-color: #f3f3f3; }
@@ -66,10 +76,34 @@ p {
 .pattern-bg {
   background-image: url(../img/pattern-bg.png); }
 
+.main-bg {
+  background-attachment: fixed;
+  background-image: url("../img/backgrounds/main.jpg");
+  background-position: center center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+.unexplained-bg {
+  background-attachment: fixed;
+  background-image: url("../img/backgrounds/unexplained.jpg");
+  background-position: center center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+.clashofclouds-bg {
+  background-attachment: fixed;
+  background-image: url("../img/backgrounds/clashofclouds.jpg");
+  background-position: center center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+
 /* navigation */
 #header__nav {
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   color: #fff;
-  background: rgba(39, 40, 51, 0.965);
+  background: none;
   cursor: default;
   height: 3.5em;
   left: 0;
@@ -106,6 +140,11 @@ p {
         #header__nav .header__nav__button:hover {
           color: #c31717;
           text-decoration: none; } }
+  #header__nav.header-scrolled {
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background: rgba(39, 40, 51, 0.965); }
   #header__nav nav {
     position: absolute;
     right: 1em;
@@ -145,11 +184,6 @@ p {
 
 /* navigation */
 #header {
-  background-attachment: fixed;
-  background-image: url("../img/banner.jpg");
-  background-position: center center;
-  -webkit-background-size: cover;
-          background-size: cover;
   -webkit-box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
           box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
   min-height: 100vh;

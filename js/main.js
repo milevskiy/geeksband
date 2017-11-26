@@ -19,4 +19,14 @@ $(document).ready(function(){
     else
       navList.css("display", "none");
   });
+
+  $("#header").waypoint(function(){
+    var className = $('#header__nav').attr('class');
+    console.log(className);
+    if (className == undefined)
+      $('#header__nav').addClass('header-scrolled');
+    else
+      $('#header__nav').removeAttr('class');
+  },{offset:'-95%'});
+
 });
