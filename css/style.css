@@ -64,6 +64,9 @@ p {
   .button.disabled, .button:disabled {
     cursor: default;
     opacity: 0.25; }
+  @media (max-width: 960px) {
+    .button {
+      margin: 1em; } }
 
 .button-gamemarket {
   margin: 0 0 0 15px; }
