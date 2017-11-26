@@ -28,5 +28,4 @@ $(document).ready(function(){
     else
       $('#header__nav').removeAttr('class');
   },{offset:'-95%'});
-
 });
