@@ -80,8 +80,10 @@ p {
   background-attachment: fixed;
   background-image: url("../img/backgrounds/main.jpg");
   background-position: center center;
+  -webkit-background-size: 100%;
+  background-size: 100%;
   -webkit-background-size: cover;
-          background-size: cover; }
+  background-size: cover; }
 
 .unexplained-bg {
   background-attachment: fixed;
