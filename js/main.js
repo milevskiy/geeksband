@@ -22,11 +22,28 @@ $(document).ready(function(){
 
   $("#header").waypoint(function(){
     var className = $('#header__nav').attr('class');
-    console.log(className);
     if (className == undefined)
       $('#header__nav').addClass('header-scrolled');
     else
       $('#header__nav').removeAttr('class');
-  },{offset:'-95%'});
+  },{offset:'-5%'});
+
+  $("#header").waypoint(function(){
+    var className = $('#portfolio').find('.container').attr('class');
+    if (className == 'container')
+      $('#portfolio').find('.container').addClass('portfolio-scrolled');
+    else
+      $('#portfolio').find('.container').removeClass('portfolio-scrolled');
+  },{offset:'-65%'});
+
+  $('.open-popup-link').magnificPopup({
+    type:'inline',
+    // Delay in milliseconds before popup is removed
+    removalDelay: 300,
+    // Class that is added to popup wrapper and background
+    // make it unique to apply your CSS animations just to this exact popup
+    mainClass: 'mfp-fade',
+    midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+  });
 
 });
