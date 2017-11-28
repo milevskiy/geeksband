@@ -12,7 +12,8 @@
   padding: 20px;
   width: auto;
   max-width: 80%;
-  margin: 20px auto; }
+  margin: 20px auto;
+  border: 1px solid #b3b3b3; }
   .white-popup p {
     word-wrap: break-word; }
 
@@ -95,7 +96,8 @@ p {
   text-transform: uppercase;
   white-space: nowrap; }
   .button:hover {
-    background-color: rgba(144, 144, 144, 0.075); }
+    background-color: rgba(144, 144, 144, 0.075);
+    text-decoration: none; }
   .button:active {
     background-color: rgba(144, 144, 144, 0.2); }
   .button.special {
@@ -103,6 +105,9 @@ p {
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
     color: #000 !important; }
+    .button.special:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-decoration: none; }
   .button.disabled, .button:disabled {
     cursor: default;
     opacity: 0.25; }
@@ -329,6 +334,10 @@ p {
   height: 200px;
   -webkit-border-radius: 100%;
           border-radius: 100%; }
+  @media (max-width: 960px) {
+    .profile .profile__img {
+      width: 150px;
+      height: 150px; } }
 
 .profile .profile__group {
   margin: 10px 0; }
