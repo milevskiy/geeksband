@@ -144,6 +144,12 @@ p {
   -webkit-background-size: cover;
           background-size: cover; }
 
+.pixelsinspace-bg {
+  background-image: url("../img/backgrounds/pixelsinspace.png");
+  background-position: center center;
+  -webkit-background-size: cover;
+          background-size: cover; }
+
 /* navigation */
 #header__nav {
   -webkit-transition: all 0.5s ease;
@@ -217,13 +223,21 @@ p {
           display: inline-block;
           height: inherit;
           line-height: inherit;
-          outline: 0; }
+          outline: 0;
+          -webkit-transition: 0.5s all ease;
+          -o-transition: 0.5s all ease;
+          transition: 0.5s all ease; }
           #header__nav nav ul li a.button, #header__nav nav ul li span.button {
             height: 2em;
             line-height: 2em;
             padding: 0 1.25em; }
           #header__nav nav ul li a:not(.button):before, #header__nav nav ul li span:not(.button):before {
             margin-right: 0.5em; }
+        #header__nav nav ul li a:hover {
+          padding: 0 10px;
+          -webkit-transition: 0.5s all ease;
+          -o-transition: 0.5s all ease;
+          transition: 0.5s all ease; }
         #header__nav nav ul li.active > a, #header__nav nav ul li.active > span {
           color: #c3e895; }
         #header__nav nav ul li > ul {
